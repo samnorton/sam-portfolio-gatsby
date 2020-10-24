@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_experience_experience_descriptions",
+  "info": {
+    "name": "job_description",
+    "icon": "briefcase",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

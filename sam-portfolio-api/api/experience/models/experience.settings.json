@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experiences",
+  "info": {
+    "name": "Experiences",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "company_name": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "start_date": {
+      "type": "string",
+      "required": true
+    },
+    "end_date": {
+      "type": "string",
+      "required": true
+    },
+    "job_description": {
+      "type": "component",
+      "repeatable": true,
+      "component": "job.experience-description",
+      "required": true
+    },
+    "featured": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  }
+}
