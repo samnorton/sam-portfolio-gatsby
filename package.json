@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "samuel-norton-portfolio",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Sam Norton's portfolio website, a Full Stack Developer / Virtual Assistant based in Angeles City, Philippines.",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
