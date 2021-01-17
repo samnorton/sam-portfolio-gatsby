@@ -43,15 +43,14 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Poppins`,
-            variants: [`300`, `400`, `500`, `600`, `700`, `800`, `900`],
-          }
+          `poppins`,
+          `poppins\:300,400,500,600,700,800,900` 
         ],
-      },
+        display: 'swap'
+      }
     },
     {
     resolve: "gatsby-plugin-load-script",
