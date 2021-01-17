@@ -3,10 +3,10 @@ import { Link } from 'gatsby'
 import Work from './Work'
 import Title from './Title'
 
-const Works = ({ id, title, works, showAllWorkLinks }) => {
+const Works = ({ title, works, showAllWorkLinks }) => {
   return (
 
-	<div className="project-section section-padding bg-gray" id="works">
+	<div className="project-section section-padding bg-gray" id="works" data-aos="zoom-in">
 		<div className="container container-wide">
 			<div className="row">
 				<div className="col-lg-12">
@@ -22,7 +22,7 @@ const Works = ({ id, title, works, showAllWorkLinks }) => {
 			</div>
 			<div className="row">
 				<div className="col">
-					<div className="more-project-btn btn-group center" >
+					<div className="more-project-btn btn-group center" data-aos="zoom-in">
             {
                  showAllWorkLinks && <Link to="/works" data-wipe-normal="VIEW ALL WORKS">VIEW ALL WORKS</Link>
            }

@@ -5,7 +5,7 @@ import services from "../constants/services"
 
 const Services = ({ title }) => {
   return (
-<div className="service-section section-padding" id="services">
+<div className="service-section section-padding" id="services" data-aos="zoom-in">
 		<div className="container container-wide">
 			<div className="row">
 				<div className="col-lg-12">

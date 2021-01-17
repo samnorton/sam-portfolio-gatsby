@@ -36,7 +36,7 @@ const { id, company_name, position, start_date, end_date, job_description } = ex
 	<div className="experience-section section-padding bg-gray" id="experience">
 		<div className="container container-wide">
 			<div className="row">
-				<div className="col-lg-5 col-12">
+				<div className="col-lg-5 col-12" data-aos="fade-right">
 					<div className="sidebar">
 						<div className="section-title-one sidebar__inner">
 							<div className="section-title-one-inner">
@@ -73,7 +73,7 @@ const { id, company_name, position, start_date, end_date, job_description } = ex
 				</div>
 
 				
-				<div className="col-lg-7 col-12">
+				<div className="col-lg-7 col-12" data-aos="fade-left">
 					<div className="row">
 						<div className="col-md-4">
 							<div aria-orientation="vertical" className="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist">

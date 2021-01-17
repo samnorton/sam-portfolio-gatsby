@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Preloader from "../components/Preloader"
-import JqueryLoad from "../components/JqueryLoad"
 import Layout from "../components/Layout"
 import Header from "../components/Header"
 import About from '../components/About'
@@ -12,6 +11,7 @@ import Experience from '../components/Experience'
 import Testimonials from '../components/Testimonials'
 import Blogs from '../components/Blogs'
 import Map from '../components/Map'
+import SEO from '../components/SEO'
 
 export default function Home({ data }) {
   
@@ -22,8 +22,8 @@ export default function Home({ data }) {
 
   return (
      <>
-    <JqueryLoad />
     <Preloader />
+    <SEO />
     <div className="main-container">
       <Layout>
       <Header />

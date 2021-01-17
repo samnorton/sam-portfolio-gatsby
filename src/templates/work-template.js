@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
-import JqueryLoad from "../components/JqueryLoad"
 import Image from 'gatsby-image'
 import Preloader from "../components/Preloader"
 import Layout from "../components/Layout"
 import PageBanner from "../components/PageBanner"
+import SEO from '../components/SEO'
 
 const SingleWorkTemplate = ({ data }) => {
 
@@ -12,11 +12,10 @@ const SingleWorkTemplate = ({ data }) => {
 
  return (
      <>
-     <JqueryLoad />
     <Preloader />
+    <SEO title={name} />
     <Layout>
     <PageBanner title={name} bannerLink="works" />
- 
 
 		<div className="project-section section-padding">
 			<div className="container">

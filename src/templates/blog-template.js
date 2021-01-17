@@ -1,20 +1,20 @@
 import React from "react"
 import ReactMarkdown from "react-markdown"
 import { graphql } from "gatsby"
-import JqueryLoad from "../components/JqueryLoad"
 import Image from 'gatsby-image'
 import Author from "../assets/images/blogs/sam-writer.jpg"
 import Preloader from "../components/Preloader"
 import Layout from "../components/Layout"
 import PageBanner from "../components/PageBanner"
+import SEO from '../components/SEO'
 
 const SingleBlogTemplate = ({ data }) => {
 const { content, title, full_image, published_date} = data.blog
 
  return (
      <>
-     <JqueryLoad />
     <Preloader />
+	<SEO title={title} />
     <Layout>
     <PageBanner title={title} bannerLink="blogs" />
 

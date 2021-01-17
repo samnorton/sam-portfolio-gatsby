@@ -7,10 +7,11 @@
 module.exports = {
   siteMetadata: {
     title: "Sam Norton | Full Stack Developer / Virtual Assistant",
-    description: "This is WebDev Portfolio Site",
+    titleTemplate: "%s | Sam Norton",
+    description: "I'm Sam Norton, a Full Stack Developer / Virtual Assistant based in Angeles City, Philippines. I enjoy creating meaningful and creative stuffs, whether that be websites, applications, graphics or anything technology related.",
     author: "Sam Norton",
-    twitterUsername: "@john_smilga",
-    image: "/twitter-img.png",
+    twitterUsername: "@sammie_norton",
+    image: "/sam-img.png",
     siteUrl: "http://www.niconorton.com",
   },
   plugins: [

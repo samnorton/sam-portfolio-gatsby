@@ -9,7 +9,7 @@ const About = ({ titleSpan, title }) => {
 		<div className="about-section section-padding" id="about" name="about">
 			<div className="container container-wide">
 				<div className="about-wrapper row">
-					<div className="col-sm-12 col-lg-6 mr-5">
+					<div className="col-sm-12 col-lg-6 mr-5" data-aos="fade-right">
 						<div className="about-content section-title-one">
 							<div className="section-title-one-inner">
 								<TitleBlue titleSpan={titleSpan} title={title} />
@@ -49,7 +49,7 @@ const About = ({ titleSpan, title }) => {
 							</div>
 						</div>
 					</div>
-					<div className="col-sm-12 ml-5 col-lg-3">
+					<div className="col-sm-12 ml-5 col-lg-3" data-aos="fade-left">
 						<div className="photo"><img className="about-image" src={AvatarImage} alt="Sam Norton"/></div>
 					</div>
 				</div>

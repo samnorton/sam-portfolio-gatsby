@@ -30,7 +30,7 @@ const Testimonials = ({ title }) => {
   const { allStrapiTestimonials: { nodes:testimonials } } = data
 
   return (
-    <div className="testimonial-section section-padding" id="testimonial">
+    <div className="testimonial-section section-padding" id="testimonial" data-aos="zoom-in">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

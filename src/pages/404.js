@@ -1,16 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
-import JqueryLoad from "../components/JqueryLoad"
 import ErrorImg from "../assets/images/header/404.png"
 import Preloader from "../components/Preloader"
 import Layout from "../components/Layout"
 import PageBanner from "../components/PageBanner"
+import SEO from '../components/SEO'
 
 const Error = () => {
    return (
       <>
-      <JqueryLoad />
       <Preloader />
+      <SEO title="404 not found" />
       <Layout>
       <PageBanner title="404 Not Found" />
 		<div class="blog-section section-padding">

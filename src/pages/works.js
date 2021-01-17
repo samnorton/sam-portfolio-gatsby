@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 import { graphql, Link, useStaticQuery } from "gatsby"
-import JqueryLoad from "../components/JqueryLoad"
 import Image from 'gatsby-image'
 import Preloader from "../components/Preloader"
 import Layout from "../components/Layout"
 import PageBanner from "../components/PageBanner"
+import SEO from '../components/SEO'
 
 const getAllCategories = catData => {
 	let tempItems = catData.map(cat => {
@@ -36,12 +36,11 @@ const selectItemsFromCategory = filterByCategory(currentCategory, works);
 
  return (
      <>
-	 <JqueryLoad />
     <Preloader />
+	<SEO title="Works" />
     <Layout>
     <PageBanner title="Works"/>
- 
-		
+
 		<div className="project-section section-padding">
 			<div className="container container-wide">
 				<div className="project-wrapper row">
@@ -89,11 +88,13 @@ const selectItemsFromCategory = filterByCategory(currentCategory, works);
 												<h3 className="title text-center mb-3">
 												 <Link to={`/works/${slug}`} key={id}>{name}</Link>
 											     </h3>
+												 <div className="d-flex justify-content-center align-content-center flex-wrap">
 												 {
 												stack.map(stackItem => {
-												return <span data-tag={stackItem.stack_name} key={stackItem.id}>{stackItem.stack_name}</span>
+												return <span className="mt-2" data-tag={stackItem.stack_name} key={stackItem.id}>{stackItem.stack_name}</span>
 												})
           											}
+											    </div>
 											</div>
 										</div>
 									</div>

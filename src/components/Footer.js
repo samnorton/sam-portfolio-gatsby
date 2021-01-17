@@ -5,7 +5,7 @@ import SocialLinks from "../constants/socialLinks"
 const Footer = () => {
   return (
   <> 
-	<footer className="footer-section bg-dark-gray footer-padding" id="contact">
+	<footer className="footer-section bg-dark-gray footer-padding" id="contact" data-aos="fade-up">
 		<div className="container container-wide">
 			<div className="row">
 				<div className="col-md-12">

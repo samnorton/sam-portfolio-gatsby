@@ -5,7 +5,7 @@ import Blog from './Blog'
 
 const Blogs = ({ title, blogs, showAllBlogLinks}) => {
   return (
-    <div className="blog-section section-padding bg-gray" id="blogs">
+    <div className="blog-section section-padding bg-gray" id="blogs" data-aos="zoom-in">
 		<div className="container">
 			<div className="row">
 				<div className="col-lg-12">
