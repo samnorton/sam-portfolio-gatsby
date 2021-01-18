@@ -40,7 +40,7 @@ module.exports = {
         queryLimit: 1000, 
         contentTypes: [`works`, `experiences`, `testimonials`, `blogs`]
         // singleTypes: [],
-      },
+      }, 
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
