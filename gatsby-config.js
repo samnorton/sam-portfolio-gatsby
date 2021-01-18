@@ -36,7 +36,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337`,
+        apiURL: `https://sam-portfolio-api.herokuapp.com/`,
         queryLimit: 1000, 
         contentTypes: [`works`, `experiences`, `testimonials`, `blogs`]
         // singleTypes: [],
