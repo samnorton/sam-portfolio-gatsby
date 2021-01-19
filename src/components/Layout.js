@@ -1,10 +1,12 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css"
+import "jquery/dist/jquery.min.js"
 import "popper.js/dist/popper.min"
 import "bootstrap/dist/js/bootstrap.min.js"
 import "../assets/css/owl.carousel.min.css"
 import "../assets/css/style.css"
-import 'aos/dist/aos.css';
+import 'aos/dist/aos.css'
 
 import Helmet from "react-helmet"
 import AOS from 'aos'
@@ -18,7 +20,6 @@ const Layout = ({ children }) => {
   return (
      <>
       <Helmet>
-          <script src={withPrefix('jquery.min.js')} type="text/javascript" />
           <script src={withPrefix('owl.carousel.min.js')} type="text/javascript" />
           <script src={withPrefix('sticky-menu.js')} type="text/javascript" />
           <script src={withPrefix('script.js')} type="text/javascript" />
