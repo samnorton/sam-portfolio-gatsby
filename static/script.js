@@ -5,6 +5,8 @@
     
 */
 
+import AOS from 'aos'
+
 (function ($) {
     "use strict";
     
@@ -78,6 +80,7 @@
         navHeight: 82
     });
 
+    AOS.init();
 
 })(jQuery);
 

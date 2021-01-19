@@ -1,20 +1,11 @@
 import React from "react"
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap/dist/css/bootstrap.min.css"
-import "jquery/dist/jquery.min.js"
-import "popper.js/dist/popper.min"
-import "bootstrap/dist/js/bootstrap.min.js"
 import "../assets/css/owl.carousel.min.css"
 import "../assets/css/style.css"
 import 'aos/dist/aos.css'
-
 import Helmet from "react-helmet"
-import AOS from 'aos'
 import { withPrefix } from "gatsby"
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-
-AOS.init();
 
 const Layout = ({ children }) => {
   return (
