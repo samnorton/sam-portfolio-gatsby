@@ -36,7 +36,6 @@ const selectItemsFromCategory = filterByCategory(currentCategory, works);
 
  return (
      <>
-    <Preloader />
 	<SEO title="Works" />
     <Layout>
     <PageBanner title="Works"/>

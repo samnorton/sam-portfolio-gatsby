@@ -9,7 +9,6 @@ import SEO from '../components/SEO'
 const Error = () => {
    return (
       <>
-      <Preloader />
       <SEO title="404 not found" />
       <Layout>
       <PageBanner title="404 Not Found" />

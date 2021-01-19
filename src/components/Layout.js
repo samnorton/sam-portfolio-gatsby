@@ -1,7 +1,7 @@
 import React from "react"
+import "../assets/css/bootstrap.min.css"
 import "../assets/css/owl.carousel.min.css"
 import "../assets/css/style.css"
-import 'aos/dist/aos.css'
 import Helmet from "react-helmet"
 import { withPrefix } from "gatsby"
 import Navbar from '../components/Navbar'
