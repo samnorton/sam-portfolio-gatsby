@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
           <script src={withPrefix('owl.carousel.min.js')} type="text/javascript" />
           <script src={withPrefix('sticky-menu.js')} type="text/javascript" />
           <script src={withPrefix('script.js')} type="text/javascript" />
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDf64CyWpOBCEocXjocJL_wZiW82hNtbTA&callback=initMap" />
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDf64CyWpOBCEocXjocJL_wZiW82hNtbTA&callback=initMap" async defer />
       </Helmet>
      <Navbar />
      { children }
