@@ -1,5 +1,9 @@
+
+
+jQuery.noConflict();
+
 (function ($) {
 
 
 
-})();
+})(jQuery);

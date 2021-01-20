@@ -7,9 +7,10 @@
 
 
 
-(function ($) {
-    "use strict";
+jQuery.noConflict();
     
+(function ($) {
+
     var windows = $(window);
 
     /* preloader */
@@ -82,5 +83,5 @@
 
 
 
-})();
+})(jQuery);
 
