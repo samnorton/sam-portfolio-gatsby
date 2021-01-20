@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { Link } from 'gatsby'
 import TitleBlue from './TitleBlue'
 import { graphql, useStaticQuery } from "gatsby"
 import { FaBriefcase } from "react-icons/fa"
@@ -30,7 +29,7 @@ const Experience = ({ titleSpan, title }) => {
 const data = useStaticQuery(query)
 const { allStrapiExperiences: { nodes:experiences } } = data
 const [value, setValue] = useState(0)
-const { id, company_name, position, start_date, end_date, job_description } = experiences[value]
+const { position, start_date, end_date, job_description } = experiences[value]
 
   return (
 	<div className="experience-section section-padding bg-gray" id="experience">
@@ -45,26 +44,26 @@ const { id, company_name, position, start_date, end_date, job_description } = ex
 								
                                  <div className="row align-items-center text-center mt-20">
 										<div className="col-lg-4 col-sm-12 client-logo-padding">
-                                        <a to="https://designmodo.com/author/samuelnorton/" target="_blank" id="designmodo"></a>
+                                        <a href="https://designmodo.com/author/samuelnorton/" target="_blank" id="designmodo"></a>
 										</div>
 
 										<div className="col-lg-4 col-sm-12 client-logo-padding">
-                                            <a to="https://speckyboy.com/author/samuel-norton/" target="_blank" id="speckyboy"></a>
+                                            <a href="https://speckyboy.com/author/samuel-norton/" target="_blank" id="speckyboy"></a>
 										</div>
 
 										<div className="col-lg-4 col-sm-12 client-logo-padding">
-                                           <a to="https://pageresource.com/" target="_blank" id="pageresource"></a>
+                                           <a href="https://pageresource.com/" target="_blank" id="pageresource"></a>
 										</div>
 
 										<div className="col-lg-4 col-sm-12 client-logo-padding">
-                                            <a to="https://1stwebdesigner.com/tag/css/" target="_blank" id="firstwebdesigner"></a>
+                                            <a href="https://1stwebdesigner.com/tag/css/" target="_blank" id="firstwebdesigner"></a>
 										</div>
 										<div className="col-lg-4 col-sm-12 client-logo-padding">
-                                            <a to="https://codegeekz.com/?s=sam+norton" target="_blank" id="codegeekz"></a>
+                                            <a href="https://codegeekz.com/?s=sam+norton" target="_blank" id="codegeekz"></a>
 										</div>
 									
 										<div className="col-lg-4 col-sm-12 client-logo-padding">
-                                            <a to="https://www.webdesignerdepot.com/author/Samuel-Norton" target="_blank" id="webdesignerdepot"></a>
+                                            <a href="https://www.webdesignerdepot.com/author/Samuel-Norton" target="_blank" id="webdesignerdepot"></a>
 										</div>
 									</div>
 							</div>

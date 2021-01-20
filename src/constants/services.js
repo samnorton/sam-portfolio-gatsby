@@ -1,4 +1,3 @@
-import React from "react"
 import WebDesign from "../assets/images/services/web-design.jpg"
 import WebDevelopment from "../assets/images/services/web-development.jpg"
 import GraphicDesign from "../assets/images/services/graphic-design.jpg"

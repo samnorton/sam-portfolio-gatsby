@@ -22,6 +22,13 @@ export const onRenderBody = ({ setPostBodyComponents }) => {
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossOrigin="anonymous"
       defer
+    />,
+      <script
+      key="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossOrigin="anonymous"
+      defer
     />
   ])
 }

@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import ErrorImg from "../assets/images/header/404.png"
-import Preloader from "../components/Preloader"
 import Layout from "../components/Layout"
 import PageBanner from "../components/PageBanner"
 import SEO from '../components/SEO'
@@ -16,7 +15,7 @@ const Error = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
-                        <img src={ErrorImg} className="d-block mx-auto" />
+                        <img src={ErrorImg} className="d-block mx-auto" alt="404 not found" />
                         <h1 className="not-found text-center center-block mt-20">404 Not Found</h1>
 
                         <p className="text-center mt-20">It seems like you are lost. The page you were looking for doesn't exist, isn't available or was loading incorrectly. <br/>
