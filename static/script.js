@@ -13,11 +13,11 @@ jQuery.noConflict();
 
     var windows = $(window);
 
-    /* preloader */
-    setTimeout(function(){
-		$('body').addClass('loaded');
-		$('h1').css('color','#222222');
-	}, 400);
+    // /* preloader */
+    // setTimeout(function(){
+	// 	$('body').addClass('loaded');
+	// 	$('h1').css('color','#222222');
+	// }, 400);
     
     /* header sticky */
     let stickyHeader = $(".sticky-header");
