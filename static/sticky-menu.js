@@ -1,9 +1,2 @@
-
-
-jQuery.noConflict();
-
 (function ($) {
-
-
-
 })(jQuery);

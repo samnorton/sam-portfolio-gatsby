@@ -5,20 +5,11 @@
     
 */
 
-
-
-jQuery.noConflict();
-    
 (function ($) {
-
+    "use strict";
+    
     var windows = $(window);
 
-    // /* preloader */
-    // setTimeout(function(){
-	// 	$('body').addClass('loaded');
-	// 	$('h1').css('color','#222222');
-	// }, 400);
-    
     /* header sticky */
     let stickyHeader = $(".sticky-header");
     windows.on('scroll', function () {
@@ -82,6 +73,4 @@ jQuery.noConflict();
     });
 
 
-
 })(jQuery);
-
