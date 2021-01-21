@@ -12,12 +12,12 @@ import Preloader from "../components/Preloader"
 
 const Layout = ({ children }) => {
   
-  const [loader, setLoader]=useState(true);
+  const [loader, setLoader] = useState(true)
     
   useEffect(()=>{
    setTimeout(()=> {
       setLoader(false)
-   }, 400)
+   }, 4000)
   }, [])
 
   let AOS;
