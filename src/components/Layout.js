@@ -16,6 +16,7 @@ const Layout = ({ children }) => {
     
   useEffect(()=>{
    setTimeout(()=> {
+      document.querySelector("body").classList.add("loaded")
       setLoader(false)
    }, 4000)
   }, [])
