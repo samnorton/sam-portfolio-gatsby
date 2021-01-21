@@ -7,8 +7,7 @@
 
 (function ($) {
     "use strict";
-    
-    var windows = $(window);
+
 
     /* header sticky */
     let stickyHeader = $(".sticky-header");

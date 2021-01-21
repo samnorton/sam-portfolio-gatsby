@@ -16,9 +16,10 @@ const Layout = ({ children }) => {
     
   useEffect(()=>{
    setTimeout(()=> {
-      document.querySelector("body").classList.add("loaded")
+       const containerDiv = document.querySelector("body");
+       containerDiv.classList.add("loaded");
       setLoader(false)
-   }, 4000)
+   }, 2000)
   }, [])
 
   let AOS;

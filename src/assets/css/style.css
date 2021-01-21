@@ -1681,7 +1681,7 @@ h1.name {
   margin-top: 2px;
   animation: animated-text 2s steps(29, end) 1s 1 normal both,
     animated-cursor 600ms steps(29, end) infinite;
-  animation-delay: 1.7s;
+  animation-delay: 1s;
 }
 
 @keyframes animated-text {
