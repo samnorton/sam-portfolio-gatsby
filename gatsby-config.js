@@ -71,7 +71,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#1abc9c`,
         display: `minimal-ui`,
-        icon: `src/assets/favicons/favicon.ico`,
+        icon: `src/assets/favicons/favicon-16x16.png`,
         icons: [
           {
             src: `src/assets/favicons/android-icon-48x48.png`,
