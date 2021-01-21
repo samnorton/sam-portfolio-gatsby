@@ -21,21 +21,6 @@ const Layout = ({ children }) => {
        }, [])
 
 
-  let AOS;
-  useEffect(() => {
-    const AOS = require("aos");
-    AOS.init({
-      once: true,
-    });
-  }, []);
-
-
-  useEffect(() => {
-    if (AOS) {
-      AOS.refresh();
-    }
-  });
-
   return (
      <>
       <Helmet>
