@@ -11,15 +11,29 @@ import Preloader from "../components/Preloader"
 
 
 const Layout = ({ children }) => {
-
-  const [loader, setLoader] = useState(true)
+  
+  const [loader, setLoader]=useState(true);
     
-       useEffect(()=>{
-        setTimeout(()=> {
-           setLoader(false)
-        }, 400)
-       }, [])
+  useEffect(()=>{
+   setTimeout(()=> {
+      setLoader(false)
+   }, 400)
+  }, [])
 
+  let AOS;
+  useEffect(() => {
+    const AOS = require("aos");
+    AOS.init({
+      once: true,
+    });
+  }, []);
+
+
+  useEffect(() => {
+    if (AOS) {
+      AOS.refresh();
+    }
+  });
 
   return (
      <>
