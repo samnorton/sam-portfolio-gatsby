@@ -13,19 +13,22 @@ import Preloader from "../components/Preloader"
 const Layout = ({ children }) => {
 
   const [loader, setLoader] = useState(true)
+    
+       useEffect(()=>{
+        setTimeout(()=> {
+           setLoader(false)
+        }, 400)
+       }, [])
+
 
   let AOS;
   useEffect(() => {
-
-    setTimeout(()=> {
-      setLoader(false)
-   }, 400)
-
     const AOS = require("aos");
     AOS.init({
       once: true,
     });
   }, []);
+
 
   useEffect(() => {
     if (AOS) {
@@ -42,7 +45,7 @@ const Layout = ({ children }) => {
           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDf64CyWpOBCEocXjocJL_wZiW82hNtbTA&callback=initMap" async defer />
       </Helmet>
      <Navbar />
-     {loader ? <Preloader/> :  children}
+     { loader ? <Preloader/> :  children}
      <Footer />
      </>
   )
