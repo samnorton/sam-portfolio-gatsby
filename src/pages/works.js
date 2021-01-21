@@ -4,6 +4,7 @@ import Image from 'gatsby-image'
 import Layout from "../components/Layout"
 import PageBanner from "../components/PageBanner"
 import SEO from '../components/SEO'
+import Preloader from '../components/Preloader'
 
 const getAllCategories = catData => {
 	let tempItems = catData.map(cat => {
@@ -36,6 +37,7 @@ const selectItemsFromCategory = filterByCategory(currentCategory, works);
  return (
      <>
 	<SEO title="Works" />
+	<Preloader />
     <Layout>
     <PageBanner title="Works"/>
 

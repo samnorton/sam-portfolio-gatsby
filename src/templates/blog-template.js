@@ -14,6 +14,7 @@ const { content, title, full_image, published_date} = data.blog
  return (
      <>
 	<SEO title={title} />
+	<Preloader />
     <Layout>
     <PageBanner title={title} bannerLink="blogs" />
 

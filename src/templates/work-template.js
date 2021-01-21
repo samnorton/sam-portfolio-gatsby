@@ -13,6 +13,7 @@ const SingleWorkTemplate = ({ data }) => {
  return (
      <>
     <SEO title={name} />
+    <Preloader />
     <Layout>
     <PageBanner title={name} bannerLink="works" />
 

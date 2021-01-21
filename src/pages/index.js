@@ -10,6 +10,7 @@ import Testimonials from '../components/Testimonials'
 import Blogs from '../components/Blogs'
 import Map from '../components/Map'
 import SEO from '../components/SEO'
+import Preloader from '../components/Preloader'
 import Helmet from "react-helmet"
 
 
@@ -26,6 +27,7 @@ export default function Home({ data }) {
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDf64CyWpOBCEocXjocJL_wZiW82hNtbTA&callback=initMap" async defer />
     </Helmet>
      <SEO />
+     <Preloader />
     <div className="main-container">
       <Layout>
       <Header />

@@ -4,11 +4,13 @@ import ErrorImg from "../assets/images/header/404.png"
 import Layout from "../components/Layout"
 import PageBanner from "../components/PageBanner"
 import SEO from '../components/SEO'
+import Preloader from '../components/Preloader'
 
 const Error = () => {
    return (
       <>
       <SEO title="404 not found" />
+      <Preloader />
       <Layout>
       <PageBanner title="404 Not Found" />
 		<div class="blog-section section-padding">
