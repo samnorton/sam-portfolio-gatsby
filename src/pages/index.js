@@ -1,7 +1,5 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
-
-import Preloader from "../components/Preloader"
 import Layout from "../components/Layout"
 import Header from "../components/Header"
 import About from '../components/About'
@@ -15,6 +13,14 @@ import SEO from '../components/SEO'
 
 export default function Home({ data }) {
   
+  const [loader, setLoader] = useState(true)
+
+  useEffect(()=>{
+   setTimeout(()=> {
+      setLoader(false)
+   }, 400)
+  }, [])
+
   const { 
     allStrapiWorks: { nodes:works },
     allStrapiBlogs: { nodes:blogs },
@@ -22,8 +28,7 @@ export default function Home({ data }) {
 
   return (
      <>
-    <Preloader />
-    <SEO />
+     <SEO />
     <div className="main-container">
       <Layout>
       <Header />

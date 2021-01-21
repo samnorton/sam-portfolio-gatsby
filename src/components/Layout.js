@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import "../assets/css/bootstrap.min.css"
 import "../assets/css/owl.carousel.min.css"
 import "../assets/css/style.css"
@@ -7,12 +7,20 @@ import Helmet from "react-helmet"
 import { withPrefix } from "gatsby"
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Preloader from "../components/Preloader"
+
 
 const Layout = ({ children }) => {
 
+  const [loader, setLoader] = useState(true)
 
   let AOS;
   useEffect(() => {
+
+    setTimeout(()=> {
+      setLoader(false)
+   }, 400)
+
     const AOS = require("aos");
     AOS.init({
       once: true,
@@ -34,7 +42,7 @@ const Layout = ({ children }) => {
           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDf64CyWpOBCEocXjocJL_wZiW82hNtbTA&callback=initMap" async defer />
       </Helmet>
      <Navbar />
-     { children }
+     {loader ? <Preloader/> :  children}
      <Footer />
      </>
   )
