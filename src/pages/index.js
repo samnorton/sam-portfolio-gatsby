@@ -10,6 +10,8 @@ import Testimonials from '../components/Testimonials'
 import Blogs from '../components/Blogs'
 import Map from '../components/Map'
 import SEO from '../components/SEO'
+import Helmet from "react-helmet"
+
 
 export default function Home({ data }) {
   
@@ -20,6 +22,9 @@ export default function Home({ data }) {
 
   return (
      <>
+     <Helmet>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDf64CyWpOBCEocXjocJL_wZiW82hNtbTA&callback=initMap" async defer />
+    </Helmet>
      <SEO />
     <div className="main-container">
       <Layout>
