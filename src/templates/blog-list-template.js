@@ -20,7 +20,6 @@ const { data } = props
 
  return (
      <>
-    <Preloader />
     <SEO title="Blogs" />
     <Layout>
     <PageBanner title="Blogs" />
