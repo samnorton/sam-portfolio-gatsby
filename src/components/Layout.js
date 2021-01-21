@@ -7,7 +7,7 @@ import Helmet from "react-helmet"
 import { withPrefix } from "gatsby"
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import Preloader from "../components/Preloader"
+
 
 
 const Layout = ({ children }) => {
@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
           <script src={withPrefix('script.js')} type="text/javascript" />
       </Helmet>
      <Navbar />
-     { loader ? <Preloader/> :  children}
+     { children}
      <Footer />
      </>
   )
