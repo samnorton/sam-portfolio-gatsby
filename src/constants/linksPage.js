@@ -1,42 +1,42 @@
 import React from "react"
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { Link } from 'gatsby'
 
 const data = [
   {
     id: 1,
     text: "Home",
     div: "home",
-    url: "#home"
+    url: "/#home"
   },
   {
     id: 2,
     text: "About",
     div: "about",
-    url: "#about"
+    url: "/#about"
   },
   {
     id: 3,
     text: "Works",
     div: "works",
-    url: "#works"
+    url: "/#works"
   },
   {
     id: 4,
     text: "Services",
     div: "services",
-    url: "#services"
+    url: "/#services"
   },
   {
     id: 5,
     text: "Blogs",
     div: "blogs",
-    url: "#blogs",
+    url: "/#blogs",
   },
   {
     id: 6,
     text: "Contact",
     div: "contact",
-    url: "#contact"
+    url: "/#contact"
   },
 ]
 
@@ -47,7 +47,7 @@ export default () => {
             {  data.map(link => {
                 return (
                         <li className="nav-item" key={link.id}>
-                          <AnchorLink offset={() => 120} href={link.url} className="nav-link text-uppercase font-weight-bold">{link.text}</AnchorLink>
+                          <Link to={link.url} className="nav-link text-uppercase font-weight-bold">{link.text}</Link>
                         </li>
                     )
               })

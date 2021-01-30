@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react"
 import MainLogo from "../assets/images/logos/devnorton-logo.png"
 import { useScrollPosition } from '../components/ScrollPosition'
-import PageLinks from '../constants/links'
+import PageLinks from '../constants/linksPage'
 import { GiHamburgerMenu } from "react-icons/gi"
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { Link } from 'gatsby'
 
 const Navbar = () => {
 
@@ -28,7 +28,7 @@ const Navbar = () => {
 		<header className="header sticky-header">
     <nav id="nav-scroll-target" className={`navbar ${navBarClass} navbar-expand-lg fixed-top py-5`}>
         <div className="container container-wide">
-        <AnchorLink href="#home"><img src={MainLogo} alt="devnorton" /></AnchorLink>
+        <Link to="/#home"><img src={MainLogo} alt="devnorton" /></Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <GiHamburgerMenu className="text-light" />
           </button>

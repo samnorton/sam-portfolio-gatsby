@@ -36,7 +36,7 @@ const { content, title, full_image, published_date} = data.blog
 							<div className="single-blog-footer" data-aos="fade-in">
 								<div className="single-blog-share mx-auto">
 									<h5>share:</h5>
-									<div class="s9-widget-wrapper"></div>
+									<div className="s9-widget-wrapper"></div>
 
 								</div>
 							</div>

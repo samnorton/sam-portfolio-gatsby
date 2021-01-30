@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Sam Norton | Full Stack Developer / Virtual Assistant",
+    title: "Full Stack Developer / Virtual Assistant",
     titleTemplate: "%s | Sam Norton",
     description: "I'm Sam Norton, a Full Stack Developer / Virtual Assistant based in Angeles City, Philippines. I enjoy creating meaningful and creative stuffs, whether that be websites, applications, graphics or anything technology related.",
     author: "Sam Norton",

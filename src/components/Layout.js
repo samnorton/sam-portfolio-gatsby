@@ -1,14 +1,15 @@
 import React, { useEffect } from "react"
-import "../assets/css/bootstrap.min.css"
-import "../assets/css/owl.carousel.min.css"
 import "../assets/css/style.css"
 import "../assets/css/aos.css"
-import Helmet from "react-helmet"
-import { withPrefix } from "gatsby"
 import Navbar from '../components/Navbar'
+import NavbarPage from '../components/NavbarPage'
 import Footer from '../components/Footer'
 
 const Layout = ({ children }) => {
+
+  const url = typeof window !== 'undefined' ? window.location.href : ''
+  const identify = url.split('/').filter(item => item.trim() !== '').filter(v=> !v.startsWith('#')).length
+
 
   let AOS;
   useEffect(() => {
@@ -27,7 +28,8 @@ const Layout = ({ children }) => {
 
   return (
      <>
-     <Navbar />
+    
+    { identify > 2 ? <NavbarPage /> : <Navbar /> }
      { children}
      <Footer />
      </>

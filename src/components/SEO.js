@@ -25,7 +25,8 @@ const SEO = ({ title, description, image, article }) => {
   }
 
   return (
-    <Helmet title={seo.title} titleTemplate={titleTemplate}>
+    <Helmet title={seo.title} titleTemplate={titleTemplate} >
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       {seo.siteUrl && <meta property="og:url" content={seo.siteUrl} />}
@@ -44,6 +45,7 @@ const SEO = ({ title, description, image, article }) => {
         <meta name="twitter:description" content={seo.description} />
       )}
       {seo.image && <meta name="twitter:image" content={seo.image} />}
+     <body data-spy="scroll" data-target=".navbar" data-offset="40"/>
     </Helmet>
   )
 }

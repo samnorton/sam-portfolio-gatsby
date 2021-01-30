@@ -1,8 +1,10 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import Carousel from 'react-bootstrap/Carousel'
+import Container from 'react-bootstrap/Container'
 import Image from "gatsby-image"
-import { FaStar } from "react-icons/fa"
 import Title from './Title'
+
 
 const query = graphql`
   {
@@ -26,12 +28,19 @@ const query = graphql`
 
 const Testimonials = ({ title }) => {
 
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
   const data = useStaticQuery(query)
   const { allStrapiTestimonials: { nodes:testimonials } } = data
 
+
   return (
     <div className="testimonial-section section-padding" id="testimonial" data-aos="zoom-in">
-      <div className="container">
+      <Container>
         <div className="row">
           <div className="col-lg-12">
             <div className="section-title-two center">
@@ -41,44 +50,37 @@ const Testimonials = ({ title }) => {
         </div>
   
         <div className="testimonial-wrap row">
-          <div className="testimonial-slider owl-carousel">
+ 
+        <div className="col-lg-8 mx-auto mt-5">
 
-              { testimonials.map(item => {
-                    const { id, name, cite, text, photo } = item
+       <Carousel activeIndex={index} onSelect={handleSelect} id="testimonialCarousel" >
 
-                    return(
-                      <div className="col-xl-8 col-lg-10 col-12 ml-auto mr-auto" key={id}>
-                      <div className="testimonial-item mt-40">
-                        <div className="testimonial_img">
-                             <Image fluid={photo.childImageSharp.fluid} alt={name} style={{ position: "absolute", overflow: "visible", display: "block", width: "211px",  height: "207px" }}  />
-                          </div>
-                        <div className="testimonial_content xs-mt-40">
-                          <div className="testimonial_content_item mb-30">
-                            <div className="testimonial_content__pro">
-                              <h4 className="mb-10">{ name }</h4>
-                              <p>{ cite }</p>
-                            </div>
-                            <ul className="d-none d-sm-inline-block">
-                              <li><FaStar></FaStar></li>
-                              <li><FaStar></FaStar></li>
-                              <li><FaStar></FaStar></li>
-                              <li><FaStar></FaStar></li>
-                              <li><FaStar></FaStar></li>
-                            </ul>
-                          </div>
-                          <div>
-                            <p>{ text } </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    )
-                })}
+       { testimonials.map((item => {
+     const { id, name, text, cite, photo } = item
 
-          </div>
-        </div>
-        </div>
-        </div>
+return(
+
+  <Carousel.Item key={id}>
+    <Image fluid={photo.childImageSharp.fluid} alt={name} className="d-block mx-auto image-fluid" />
+    <Carousel.Caption className="d-md-block">
+      <p>{ text }</p>
+      <h5>{ name } | { cite } </h5>
+    </Carousel.Caption>
+  </Carousel.Item>
+   )
+
+ }))
+
+ }
+
+
+         </Carousel>
+         </div>
+         </div>
+   </Container>
+
+   </div>
+
   )
 }
 

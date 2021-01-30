@@ -35,7 +35,7 @@ const { position, start_date, end_date, job_description } = experiences[value]
 	<div className="experience-section section-padding bg-gray" id="experience">
 		<div className="container container-wide">
 			<div className="row">
-				<div className="col-lg-5 col-12" data-aos="fade-right">
+				<div className="col-lg-5 col-sm-12" data-aos="fade-right">
 					<div className="sidebar">
 						<div className="section-title-one sidebar__inner">
 							<div className="section-title-one-inner">
@@ -43,26 +43,26 @@ const { position, start_date, end_date, job_description } = experiences[value]
 								<p>Since the beginning of my journey as a virtual assistant nearly 7 years ago, I've done different kinds of remote work for agencies, startups, and collaborated with talented individuals for business and consumer use. </p>
 								
                                  <div className="row align-items-center text-center mt-20">
-										<div className="col-lg-4 col-sm-12 client-logo-padding">
+										<div className="col-12 col-lg-4 col-md-6 client-logo-padding">
                                         <a href="https://designmodo.com/author/samuelnorton/" target="_blank" id="designmodo"></a>
 										</div>
 
-										<div className="col-lg-4 col-sm-12 client-logo-padding">
+										<div className="col-12 col-lg-4 col-md-6 client-logo-padding">
                                             <a href="https://speckyboy.com/author/samuel-norton/" target="_blank" id="speckyboy"></a>
 										</div>
 
-										<div className="col-lg-4 col-sm-12 client-logo-padding">
+										<div className="col-12 col-lg-4 col-md-6 client-logo-padding">
                                            <a href="https://pageresource.com/" target="_blank" id="pageresource"></a>
 										</div>
 
-										<div className="col-lg-4 col-sm-12 client-logo-padding">
+										<div className="col-12 col-lg-4 col-md-6 client-logo-padding">
                                             <a href="https://1stwebdesigner.com/tag/css/" target="_blank" id="firstwebdesigner"></a>
 										</div>
-										<div className="col-lg-4 col-sm-12 client-logo-padding">
+										<div className="col-12 col-lg-4 col-md-6 client-logo-padding">
                                             <a href="https://codegeekz.com/?s=sam+norton" target="_blank" id="codegeekz"></a>
 										</div>
 									
-										<div className="col-lg-4 col-sm-12 client-logo-padding">
+										<div className="col-12 col-lg-4 col-md-6 client-logo-padding">
                                             <a href="https://www.webdesignerdepot.com/author/Samuel-Norton" target="_blank" id="webdesignerdepot"></a>
 										</div>
 									</div>

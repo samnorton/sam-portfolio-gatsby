@@ -8,7 +8,7 @@ const Blogs = ({ title, blogs, showAllBlogLinks}) => {
     <div className="blog-section section-padding bg-gray" id="blogs" data-aos="zoom-in">
 		<div className="container">
 			<div className="row">
-				<div className="col-lg-12">
+				<div className="col-sm-12 col-lg-12">
 					<div className="section-title-two center">
 						 <Title title={title} />
 					</div>
@@ -16,11 +16,9 @@ const Blogs = ({ title, blogs, showAllBlogLinks}) => {
 			</div>
 
 			<div className="row">
-				<div className="blog-slider owl-carousel">
             { blogs.map((blog) => {
               return <Blog key={blog.id} { ...blog} />
             })}
-				</div>
 			</div>
 
 

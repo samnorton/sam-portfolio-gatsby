@@ -32,7 +32,7 @@ const SingleWorkTemplate = ({ data }) => {
 											<ul>
 												<li><span className="font-weight-bold">Client:</span> { client }</li>
 												<li>
-													<span className="font-weight-bold">Demo:</span> <a to={demo_url} target="_blank">{demo_url}</a>
+													<span className="font-weight-bold">Demo:</span> <a href={demo_url} target="_blank">{demo_url}</a>
 												</li>
 												<li><span className="mr-2 font-weight-bold">Technologies:</span> 
                                                 { stack.map(item => {

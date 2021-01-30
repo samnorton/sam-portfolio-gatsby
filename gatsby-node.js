@@ -82,7 +82,25 @@ Array.from({ length: numPages}).forEach((_, i) => {
 //   })
 // })
 
+}
 
 
 
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (stage === "build-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /react-scrollspy/,
+            use: loaders.null(),
+          },
+          {
+            test: /react-router-hash-link/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  }
 }
