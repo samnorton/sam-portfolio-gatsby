@@ -2339,8 +2339,8 @@ ul.title-desc li {
 
 @media only screen and (min-width: 360px) and (max-width: 481px) {
   .testimonial-wrap {
-    margin: 0 0 -50px;
-    padding-bottom: 30px;
+    margin: -47px 0px -30px;
+    padding-bottom: 75px;
   }
 }
 
