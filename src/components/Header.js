@@ -12,7 +12,7 @@ const Header = () => {
           <p>I help businesses and small agencies grow through my diverse and dynamic skillset. I am passionate about building excellent products and resources that improves the lives of those around me. 
             </p>
           <div className="btn-group">
-            <Link to="/" data-wipe="GET IN TOUCH">GET IN TOUCH</Link>
+            <a href="mailto:samuelnico.norton@gmail.com" data-wipe="GET IN TOUCH">GET IN TOUCH</a>
           </div>
         </div>
       </div>
