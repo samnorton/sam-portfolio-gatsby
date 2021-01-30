@@ -2337,6 +2337,13 @@ ul.title-desc li {
   }
 }
 
+@media only screen and (min-width: 360px) and (max-width: 481px) {
+  .testimonial-wrap {
+    margin: 0 0 -50px;
+    padding-bottom: 30px;
+  }
+}
+
 .carousel-item .gatsby-image-wrapper {
   width: 190px;
   height: 190px;
